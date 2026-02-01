@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.env
+*.db
+test.db
+
+node_modules/
+dist/
+
+.idea/
+.vscode/
+*.swp
+*.swo

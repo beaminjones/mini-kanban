@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #f1f5f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.btn-primary:hover {
+  background: #4f46e5 !important;
+  transform: translateY(-1px);
+}
+
+.board-item:hover {
+  background: #334155 !important;
+  border-color: #475569 !important;
+  transform: translateX(4px);
+}
+
+.add-btn:hover {
+  border-color: #818cf8 !important;
+  color: #a5b4fc !important;
+  background: rgba(129, 140, 248, 0.08) !important;
+}
+
+.card-item:hover {
+  border-color: #475569 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.back-btn:hover {
+  background: #334155 !important;
+  border-color: #475569 !important;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+@media (max-width: 640px) {
+  .board-list-container {
+    padding: 20px 16px !important;
+    max-width: 100% !important;
+  }
+
+  .board-list-title {
+    font-size: 24px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .board-list-form {
+    flex-direction: column !important;
+  }
+
+  .board-list-form input {
+    width: 100%;
+  }
+
+  .kanban-header {
+    flex-wrap: wrap;
+    gap: 12px !important;
+  }
+
+  .kanban-title {
+    font-size: 18px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100vw - 140px);
+  }
+
+  .kanban-wrapper {
+    padding: 16px !important;
+  }
+
+  .kanban-columns {
+    flex-direction: column !important;
+    overflow-x: visible !important;
+    gap: 16px !important;
+    padding-bottom: 20px;
+  }
+
+  .kanban-column {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 14px !important;
+  }
+
+  .add-column-btn {
+    min-width: 100% !important;
+    width: 100% !important;
+    padding: 14px !important;
+  }
+
+  .card-item {
+    padding: 12px !important;
+  }
+
+  .menu-btn {
+    padding: 6px !important;
+  }
+
+  body {
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+}
